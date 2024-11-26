@@ -1,0 +1,97 @@
+\documentclass[a4paper]{article}
+
+\usepackage[pages=all, color=black, position={current page.south}, placement=bottom, scale=1, opacity=1, vshift=5mm]{background}
+
+\usepackage[margin=1in]{geometry} % full-width
+
+% AMS Packages
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+
+% Unicode
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\hypersetup{
+	unicode,
+%	colorlinks,
+%	breaklinks,
+%	urlcolor=cyan, 
+%	linkcolor=blue, 
+	pdfauthor={Author One, Author Two, Author Three},
+	pdftitle={A simple article template},
+	pdfsubject={A simple article template},
+	pdfkeywords={article, template, simple},
+	pdfproducer={LaTeX},
+	pdfcreator={pdflatex}
+}
+
+% Natbib
+\usepackage[sort&compress,numbers,square]{natbib}
+\bibliographystyle{mplainnat}
+
+% Theorem, Lemma, etc
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{claim}{Claim}[theorem]
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{fact}[theorem]{Fact}
+\newtheorem{hypothesis}[theorem]{Hypothesis}
+\newtheorem{assumption}[theorem]{Assumption}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{criterion}[theorem]{Criterion}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{principle}[theorem]{Principle}
+
+\usepackage{graphicx, color}
+\graphicspath{{fig/}}
+
+%\usepackage[linesnumbered,ruled,vlined,commentsnumbered]{algorithm2e} % use algorithm2e for typesetting algorithms
+\usepackage{algorithm, algpseudocode} % use algorithm and algorithmicx for typesetting algorithms
+\usepackage{mathrsfs} % for \mathscr command
+
+\usepackage{lipsum}
+
+% \backgroundsetup{contents={}} -- uncomment for removing the draft status
+
+% Author info
+\title{Elements\\[1em] \large "Foundations of Thought: The Building Blocks of Mathematics"}
+
+\date{
+	\vspace{-2em}
+	\today
+}
+
+%\author{MrSigma123$$\thanks{\hyperref[MrSigma123 github]{https://github.com/MrSigma123}}}
+
+\begin{document}
+	\maketitle
+	
+	\begin{abstract}
+		Mathematics is built upon a foundation of elemental concepts that trace their origins to the earliest observations of the world around us. In this article, we embark on a journey back to these fundamental ideas, exploring the 			building blocks of mathematical thought. From the emergence of numbers as tools for counting and trade, to the development of geometry as a means to understand shapes and space, each concept reveals a story of 			human ingenuity and curiosity.
+
+		We begin with numbers, the simplest yet most profound abstraction, evolving from tally marks to the notion of zero and the infinite potential of integers and fractions. The discussion then turns to geometry, rooted in the study 		of points, lines, and shapes, as inspired by nature and crystallized in Euclid's Elements. We explore patterns and their role in recognizing order in both the natural and numerical world, and delve into the foundational ideas of 		set theory, logic, and arithmetic that unify and structure mathematical reasoning.
+		
+		This article aims to illuminate how these elementary concepts not only shaped ancient civilizations but also underpin the entirety of modern mathematics. By reconnecting with these roots, we seek to uncover the simplicity, 			elegance, and universality of mathematics in its most fundamental form.
+		
+		\noindent\textbf{Keywords:} article, basics, fundamentals
+	\end{abstract}
+
+	\tableofcontents
+	
+	\section{Introduction}
+	\label{sec:intro}
+	
+%	\newpage
+	\bibliography{refs}
+	
+	\appendix
+	
+\end{document}
