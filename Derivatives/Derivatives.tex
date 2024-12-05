@@ -1,0 +1,77 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\title{Basic Derivative Formulas}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Introduction}
+This document provides a comprehensive list of basic derivative formulas useful for calculus. Each formula is presented in a simple and clear manner.
+
+\section*{Basic Rules of Differentiation}
+
+\begin{enumerate}
+    \item \textbf{Constant Rule:} 
+    \[ \frac{d}{dx}[c] = 0 \]
+    where \( c \) is a constant.
+
+    \item \textbf{Power Rule:} 
+    \[ \frac{d}{dx}[x^n] = nx^{n-1} \]
+    where \( n \) is any real number.
+
+    \item \textbf{Sum/Difference Rule:} 
+    \[ \frac{d}{dx}[f(x) \pm g(x)] = f'(x) \pm g'(x) \]
+
+    \item \textbf{Product Rule:} 
+    \[ \frac{d}{dx}[f(x)g(x)] = f'(x)g(x) + f(x)g'(x) \]
+
+    \item \textbf{Quotient Rule:} 
+    \[ \frac{d}{dx}\left[\frac{f(x)}{g(x)}\right] = \frac{f'(x)g(x) - f(x)g'(x)}{g(x)^2} \]
+
+    \item \textbf{Chain Rule:} 
+    \[ \frac{d}{dx}[f(g(x))] = f'(g(x))g'(x) \]
+\end{enumerate}
+
+\section*{Derivatives of Common Functions}
+
+\begin{enumerate}
+    \item \textbf{Exponential Functions:}
+    \[ \frac{d}{dx}[e^x] = e^x \]
+    \[ \frac{d}{dx}[a^x] = a^x \ln(a), \quad a > 0 \]
+
+    \item \textbf{Logarithmic Functions:}
+    \[ \frac{d}{dx}[\ln(x)] = \frac{1}{x}, \quad x > 0 \]
+    \[ \frac{d}{dx}[\log_a(x)] = \frac{1}{x \ln(a)}, \quad x > 0, \ a > 0 \]
+
+    \item \textbf{Trigonometric Functions:}
+    \[ \frac{d}{dx}[\sin(x)] = \cos(x) \]
+    \[ \frac{d}{dx}[\cos(x)] = -\sin(x) \]
+    \[ \frac{d}{dx}[\tan(x)] = \sec^2(x), \quad x \neq \frac{\pi}{2} + n\pi \]
+
+    \item \textbf{Inverse Trigonometric Functions:}
+    \[ \frac{d}{dx}[\arcsin(x)] = \frac{1}{\sqrt{1-x^2}}, \quad |x| < 1 \]
+    \[ \frac{d}{dx}[\arccos(x)] = \frac{-1}{\sqrt{1-x^2}}, \quad |x| < 1 \]
+    \[ \frac{d}{dx}[\arctan(x)] = \frac{1}{1+x^2} \]
+
+    \item \textbf{Hyperbolic Functions:}
+    \[ \frac{d}{dx}[\sinh(x)] = \cosh(x) \]
+    \[ \frac{d}{dx}[\cosh(x)] = \sinh(x) \]
+    \[ \frac{d}{dx}[\tanh(x)] = \text{sech}^2(x) \]
+
+    \item \textbf{Inverse Hyperbolic Functions:}
+    \[ \frac{d}{dx}[\text{arsinh}(x)] = \frac{1}{\sqrt{x^2+1}} \]
+    \[ \frac{d}{dx}[\text{arcosh}(x)] = \frac{1}{\sqrt{x^2-1}}, \quad x > 1 \]
+    \[ \frac{d}{dx}[\text{artanh}(x)] = \frac{1}{1-x^2}, \quad |x| < 1 \]
+\end{enumerate}
+
+\section*{Conclusion}
+These formulas form the foundation of differential calculus and are essential tools for solving a wide variety of problems in mathematics, physics, and engineering.
+
+\end{document}
