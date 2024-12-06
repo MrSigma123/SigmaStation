@@ -1,0 +1,126 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{amsmath} % For advanced math typesetting
+\usepackage{amssymb} % For additional mathematical symbols
+\usepackage{geometry} % For page layout
+\geometry{margin=1in} % Adjust margins
+
+% Define \arccot command
+\newcommand{\arccot}{\operatorname{arccot}}
+
+\title{Rules for Integrating: Indefinite Integrals}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Introduction}
+Integration is the reverse process of differentiation and a fundamental concept in calculus. This document focuses on rules for evaluating indefinite integrals, which are written in the form:
+\[
+\int f(x) \, dx = F(x) + C,
+\]
+where \( F(x) \) is the antiderivative of \( f(x) \), and \( C \) is the constant of integration.
+
+\section*{Basic Integration Rules}
+
+\subsection*{1. Constant Rule}
+\[
+\int k \, dx = kx + C, \quad \text{where \( k \) is a constant.}
+\]
+
+\subsection*{2. Power Rule}
+\[
+\int x^n \, dx = \frac{x^{n+1}}{n+1} + C, \quad \text{for \( n \neq -1 \).}
+\]
+
+\subsection*{3. Exponential Function Rule}
+\[
+\int e^x \, dx = e^x + C,
+\]
+\[
+\int a^x \, dx = \frac{a^x}{\ln a} + C, \quad \text{where \( a > 0 \) and \( a \neq 1 \).}
+\]
+
+\subsection*{4. Logarithmic Function Rule}
+\[
+\int \frac{1}{x} \, dx = \ln|x| + C, \quad \text{for \( x \neq 0 \).}
+\]
+
+\subsection*{5. Trigonometric Functions}
+\[
+\int \sin x \, dx = -\cos x + C,
+\]
+\[
+\int \cos x \, dx = \sin x + C,
+\]
+\[
+\int \sec^2 x \, dx = \tan x + C,
+\]
+\[
+\int \csc^2 x \, dx = -\cot x + C,
+\]
+\[
+\int \sec x \tan x \, dx = \sec x + C,
+\]
+\[
+\int \csc x \cot x \, dx = -\csc x + C.
+\]
+
+\subsection*{6. Inverse Trigonometric Functions}
+\[
+\int \frac{1}{\sqrt{1-x^2}} \, dx = \arcsin x + C, \quad \text{for \( |x| \leq 1 \).}
+\]
+\[
+\int \frac{-1}{\sqrt{1-x^2}} \, dx = \arccos x + C, \quad \text{for \( |x| \leq 1 \).}
+\]
+\[
+\int \frac{1}{1+x^2} \, dx = \arctan x + C,
+\]
+\[
+\int \frac{-1}{1+x^2} \, dx = \arccot x + C,
+\]
+\[
+\int \frac{1}{|x|\sqrt{x^2-1}} \, dx = \text{arcsec}|x| + C, \quad \text{for \( |x| \geq 1 \).}
+\]
+\[
+\int \frac{-1}{|x|\sqrt{x^2-1}} \, dx = \text{arccsc}|x| + C, \quad \text{for \( |x| \geq 1 \).}
+\]
+
+\section*{Integration Techniques}
+
+\subsection*{1. Linearity of Integration}
+\[
+\int \left[af(x) + bg(x)\right] \, dx = a\int f(x) \, dx + b\int g(x) \, dx,
+\]
+where \( a \) and \( b \) are constants.
+
+\subsection*{2. Substitution Rule}
+If \( u = g(x) \), then:
+\[
+\int f(g(x))g'(x) \, dx = \int f(u) \, du.
+\]
+
+\subsection*{3. Integration by Parts}
+\[
+\int u \, dv = uv - \int v \, du,
+\]
+where \( u \) and \( v \) are differentiable functions of \( x \).
+
+\subsection*{4. Partial Fraction Decomposition}
+For rational functions, decompose into partial fractions before integrating:
+\[
+\frac{P(x)}{Q(x)} = \sum \frac{A}{(x-r)^k} + \sum \frac{Bx+C}{(x^2+px+q)^m}.
+\]
+
+\subsection*{5. Trigonometric Substitution}
+Use trigonometric identities to simplify integrals involving square roots, such as:
+\[
+x = a\sin \theta, \quad x = a\tan \theta, \quad x = a\sec \theta.
+\]
+
+\section*{Conclusion}
+These rules and techniques form the foundation for solving indefinite integrals. Mastery of these principles will enable you to tackle a wide range of integration problems.
+
+\end{document}
