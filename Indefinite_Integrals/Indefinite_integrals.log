@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.25)  6 DEC 2024 23:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.25)  8 DEC 2024 00:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**Integrals.tex
-(./Integrals.tex
+**Indefinite_integrals.tex
+(./Indefinite_integrals.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
@@ -134,8 +134,8 @@ File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count277
 \l__pdf_internal_box=\box53
 )
-(./Integrals.aux)
-\openout1 = `Integrals.aux'.
+(./Indefinite_integrals.aux)
+\openout1 = `Indefinite_integrals.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
@@ -200,7 +200,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
 
-(./Integrals.aux)
+(./Indefinite_integrals.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -208,12 +208,12 @@ L3 programming layer <2024-02-20>
  ) 
 Here is how much of TeX's memory you used:
  2300 strings out of 474116
- 33196 string characters out of 5743682
+ 33328 string characters out of 5743682
  1933187 words of memory out of 5000000
  24680 multiletter control sequences out of 15000+600000
  567170 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,6n,65p,263b,211s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,6n,65p,274b,211s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
@@ -223,7 +223,7 @@ sr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
 ocal/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loca
 l/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
 /texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Integrals.pdf (3 pages, 103495 bytes).
+Output written on Indefinite_integrals.pdf (3 pages, 103495 bytes).
 PDF statistics:
  59 PDF objects out of 1000 (max. 8388607)
  35 compressed objects within 1 object stream
