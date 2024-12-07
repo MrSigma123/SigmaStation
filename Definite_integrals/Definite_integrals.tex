@@ -1,0 +1,77 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+
+\begin{document}
+
+\title{Rules for Definite Integrals}
+\author{}
+\date{}
+\maketitle
+
+\section*{Introduction}
+Definite integrals are a fundamental concept in calculus, representing the area under a curve over a specific interval. This document outlines the key rules and properties of definite integrals.
+
+\section*{1. Definition of a Definite Integral}
+The definite integral of a function $f(x)$ from $a$ to $b$ is given by:
+\[
+\int_a^b f(x) \, dx = \lim_{n \to \infty} \sum_{i=1}^n f(x_i^*) \Delta x
+\]
+where $\Delta x = \frac{b-a}{n}$ and $x_i^*$ is a point in the $i$th subinterval.
+
+\section*{2. Linearity of Integration}
+For any two functions $f(x)$ and $g(x)$, and constants $c_1$ and $c_2$:
+\[
+\int_a^b \left(c_1 f(x) + c_2 g(x)\right) dx = c_1 \int_a^b f(x) \, dx + c_2 \int_a^b g(x) \, dx
+\]
+
+\section*{3. Additivity over Intervals}
+If $c$ is a point in the interval $[a, b]$, then:
+\[
+\int_a^b f(x) \, dx = \int_a^c f(x) \, dx + \int_c^b f(x) \, dx
+\]
+
+\section*{4. Reversal of Limits}
+Reversing the limits of integration changes the sign of the integral:
+\[
+\int_a^b f(x) \, dx = -\int_b^a f(x) \, dx
+\]
+
+\section*{5. Zero Interval Property}
+If the limits of integration are the same, the integral evaluates to zero:
+\[
+\int_a^a f(x) \, dx = 0
+\]
+
+\section*{6. Comparison Property}
+If $f(x) \leq g(x)$ for all $x \in [a, b]$, then:
+\[
+\int_a^b f(x) \, dx \leq \int_a^b g(x) \, dx
+\]
+
+\section*{7. Integration of an Absolute Value}
+For a function $f(x)$, the integral of its absolute value satisfies:
+\[
+\left| \int_a^b f(x) \, dx \right| \leq \int_a^b |f(x)| \, dx
+\]
+
+\section*{8. Fundamental Theorem of Calculus}
+\subsection*{Part 1: Derivative of an Integral}
+If $F(x)$ is defined as:
+\[
+F(x) = \int_a^x f(t) \, dt,
+\]
+then $F'(x) = f(x)$.
+
+\subsection*{Part 2: Evaluation of a Definite Integral}
+If $F(x)$ is an antiderivative of $f(x)$, then:
+\[
+\int_a^b f(x) \, dx = F(b) - F(a)
+\]
+
+\section*{Conclusion}
+These rules provide the foundation for solving problems involving definite integrals and understanding their applications in mathematics and science.
+
+\end{document}
