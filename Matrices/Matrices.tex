@@ -1,0 +1,94 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em}
+
+\title{Basic Rules of Matrix Manipulation}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Introduction}
+Matrices are fundamental tools in mathematics, physics, engineering, and computer science. This document provides an overview of the basic rules of matrix manipulation.
+
+\section*{Matrix Addition and Subtraction}
+\begin{itemize}
+    \item Matrices can be added or subtracted only if they have the same dimensions.
+    \item If \( A = [a_{ij}] \) and \( B = [b_{ij}] \) are two \( m \times n \) matrices, their sum \( C = A + B \) is defined as:
+    \[
+    C = [c_{ij}], \quad c_{ij} = a_{ij} + b_{ij}.
+    \]
+\end{itemize}
+
+\section*{Scalar Multiplication}
+\begin{itemize}
+    \item A matrix \( A = [a_{ij}] \) can be multiplied by a scalar \( k \). The result is:
+    \[
+    kA = [k \cdot a_{ij}].
+    \]
+\end{itemize}
+
+\section*{Matrix Multiplication}
+\begin{itemize}
+    \item The product of two matrices \( A \) and \( B \) is defined only if the number of columns in \( A \) equals the number of rows in \( B \).
+    \item If \( A \) is an \( m \times n \) matrix and \( B \) is an \( n \times p \) matrix, the product \( C = AB \) is an \( m \times p \) matrix, where:
+    \[
+    c_{ij} = \sum_{k=1}^n a_{ik} b_{kj}.
+    \]
+\end{itemize}
+
+\section*{Transpose of a Matrix}
+\begin{itemize}
+    \item The transpose of a matrix \( A \), denoted by \( A^\top \), is obtained by interchanging its rows and columns.
+    \item If \( A = [a_{ij}] \), then:
+    \[
+    A^\top = [a_{ji}].
+    \]
+\end{itemize}
+
+\section*{Identity Matrix}
+\begin{itemize}
+    \item The identity matrix \( I_n \) is a square matrix of size \( n \times n \) with ones on the diagonal and zeros elsewhere:
+    \[
+    I_n = 
+    \begin{bmatrix}
+    1 & 0 & \cdots & 0 \\
+    0 & 1 & \cdots & 0 \\
+    \vdots & \vdots & \ddots & \vdots \\
+    0 & 0 & \cdots & 1
+    \end{bmatrix}.
+    \]
+    \item \( AI_n = I_nA = A \) for any \( n \times n \) matrix \( A \).
+\end{itemize}
+
+\section*{Matrix Inversion}
+\begin{itemize}
+    \item A square matrix \( A \) is invertible (or non-singular) if there exists a matrix \( A^{-1} \) such that:
+    \[
+    AA^{-1} = A^{-1}A = I_n.
+    \]
+    \item Only square matrices can have inverses, and not all square matrices are invertible.
+\end{itemize}
+
+\section*{Properties of Matrix Operations}
+\begin{enumerate}
+    \item \textbf{Associativity of Addition:} \( A + (B + C) = (A + B) + C \).
+    \item \textbf{Commutativity of Addition:} \( A + B = B + A \).
+    \item \textbf{Distributive Property:} \( A(B + C) = AB + AC \) and \( (A + B)C = AC + BC \).
+    \item \textbf{Associativity of Multiplication:} \( A(BC) = (AB)C \).
+    \item \textbf{Transpose Properties:}
+    \[
+    (A + B)^\top = A^\top + B^\top, \quad (AB)^\top = B^\top A^\top.
+    \]
+\end{enumerate}
+
+\section*{Conclusion}
+These basic rules of matrix manipulation are foundational for understanding advanced topics in linear algebra. Mastery of these operations will enable you to solve complex problems in various disciplines.
+
+\end{document}
