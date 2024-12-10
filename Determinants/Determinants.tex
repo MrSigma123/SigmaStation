@@ -1,0 +1,78 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\usepackage{hyperref}
+
+\title{Basics of Determinants and Related Rules}
+\author{Mathematics Primer}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Introduction to Determinants}
+The determinant is a scalar value that can be computed from the elements of a square matrix. It is a fundamental concept in linear algebra with applications in solving systems of linear equations, finding the area or volume in geometry, and more.
+
+\section{Definition of Determinants}
+For a square matrix $A$, the determinant is denoted by $\det(A)$ or $|A|$. Determinants are defined recursively:
+\begin{itemize}
+    \item The determinant of a $1 \times 1$ matrix $A = [a]$ is $\det(A) = a$.
+    \item For a $2 \times 2$ matrix:
+    \[
+    A = \begin{bmatrix} a & b \\
+    c & d \end{bmatrix}, \quad \det(A) = ad - bc.
+    \]
+    \item For larger matrices, the determinant is computed using more complex rules, such as expansion by minors or other algorithms like Sarrus' Rule (for $3 \times 3$ matrices).
+\end{itemize}
+
+\section{Laplace Expansion}
+Laplace expansion, also known as expansion by minors, is a method to compute the determinant of an $n \times n$ matrix. It is defined as:
+\[
+\det(A) = \sum_{j=1}^{n} (-1)^{i+j} a_{ij} M_{ij},
+\]
+where:
+\begin{itemize}
+    \item $a_{ij}$ is the element in the $i$-th row and $j$-th column of $A$.
+    \item $M_{ij}$ is the minor of $a_{ij}$, obtained by removing the $i$-th row and $j$-th column from $A$ and computing the determinant of the resulting $(n-1) \times (n-1)$ matrix.
+\end{itemize}
+Laplace expansion can be performed along any row or column of the matrix.
+
+\section{Sarrus' Rule for $3 \times 3$ Matrices}
+Sarrus' Rule provides a shortcut for calculating the determinant of a $3 \times 3$ matrix:
+\[
+A = \begin{bmatrix}
+    a & b & c \\
+    d & e & f \\
+    g & h & i
+\end{bmatrix}.
+\]
+The determinant is given by:
+\[
+\det(A) = aei + bfg + cdh - ceg - bdi - afh.
+\]
+This rule involves summing the products of the diagonals extending from the top-left to the bottom-right and subtracting the products of the diagonals extending from the bottom-left to the top-right.
+
+\section{Properties of Determinants}
+\begin{itemize}
+    \item \textbf{Linearity:} The determinant is linear with respect to the rows and columns of the matrix.
+    \item \textbf{Effect of Row/Column Swaps:} Swapping two rows or columns of a matrix multiplies the determinant by $-1$.
+    \item \textbf{Effect of Scalar Multiplication:} Multiplying a row or column by a scalar $k$ multiplies the determinant by $k$.
+    \item \textbf{Effect of Adding Rows/Columns:} Adding a multiple of one row (or column) to another does not change the determinant.
+    \item \textbf{Singular Matrices:} If a matrix is singular (i.e., it has linearly dependent rows or columns), then its determinant is zero.
+\end{itemize}
+
+\section{Applications of Determinants}
+\begin{itemize}
+    \item Solving linear systems using Cramer's Rule.
+    \item Checking the invertibility of matrices (a matrix is invertible if and only if its determinant is non-zero).
+    \item Finding the area or volume of geometric shapes defined by vectors.
+    \item Understanding transformations in linear algebra, such as scaling and rotation.
+\end{itemize}
+
+\section*{Conclusion}
+The determinant is a versatile and essential tool in mathematics. From basic properties to advanced computational techniques, it serves as a gateway to understanding linear transformations, systems of equations, and geometric concepts.
+
+\end{document}
