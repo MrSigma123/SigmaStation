@@ -1,0 +1,109 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{enumitem}
+
+\title{Comprehensive Guide to Logic Basics, Quantifiers, and Set Theory}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\section{Introduction}
+Logic, quantifiers, and set theory form the foundational pillars of mathematics and computer science. This guide provides an introduction to these concepts, their notation, and usage.
+
+\section{Logic Basics}
+Logic is the study of reasoning and principles of valid inference. It provides tools to evaluate the truth of statements.
+
+\subsection{Propositional Logic}
+Propositional logic deals with propositions, which are statements that are either true (T) or false (F).
+\begin{itemize}
+    \item \textbf{Logical Operators:}
+    \begin{itemize}
+        \item \textbf{Negation (\(\neg\)):} \(\neg P\) is true if \(P\) is false.
+        \item \textbf{Conjunction (\(\land\)):} \(P \land Q\) is true if both \(P\) and \(Q\) are true.
+        \item \textbf{Disjunction (\(\lor\)):} \(P \lor Q\) is true if at least one of \(P\) or \(Q\) is true.
+        \item \textbf{Implication (\(\implies\)):} \(P \implies Q\) is false only if \(P\) is true and \(Q\) is false.
+        \item \textbf{Biconditional (\(\iff\)):} \(P \iff Q\) is true if \(P\) and \(Q\) have the same truth value.
+    \end{itemize}
+\end{itemize}
+
+\subsection{Truth Tables}
+Truth tables are used to systematically explore all possible truth values of logical expressions. Example:
+\[
+\begin{array}{|c|c|c|}
+\hline
+P & Q & P \land Q \\
+\hline
+T & T & T \\
+T & F & F \\
+F & T & F \\
+F & F & F \\
+\hline
+\end{array}
+\]
+
+\subsection{Logical Equivalence}
+Two statements are logically equivalent if they have the same truth table. For example:
+\[\neg(P \lor Q) \equiv \neg P \land \neg Q \text{ (De Morgan's Law)}\]
+
+\section{Quantifiers}
+Quantifiers extend logic to statements about collections of objects, often expressed as variables.
+
+\subsection{Universal Quantifier (\(\forall\))}
+\(\forall x \in S, P(x)\): The statement is true if \(P(x)\) is true for all elements \(x\) in the set \(S\).
+\begin{itemize}
+    \item Example: \(\forall x \in \mathbb{R}, x^2 \geq 0\).
+\end{itemize}
+
+\subsection{Existential Quantifier (\(\exists\))}
+\(\exists x \in S, P(x)\): The statement is true if there exists at least one element \(x\) in \(S\) such that \(P(x)\) is true.
+\begin{itemize}
+    \item Example: \(\exists x \in \mathbb{R}, x^2 = 4\).
+\end{itemize}
+
+\subsection{Negating Quantifiers}
+Negating statements with quantifiers involves switching between \(\forall\) and \(\exists\):
+\[\neg(\forall x, P(x)) \equiv \exists x, \neg P(x)\]
+\[\neg(\exists x, P(x)) \equiv \forall x, \neg P(x)\]
+
+\section{Set Theory}
+Set theory studies collections of objects, called sets. Sets are fundamental in mathematics.
+
+\subsection{Basic Concepts}
+\begin{itemize}
+    \item \textbf{Set:} A collection of distinct elements. Example: \(A = \{1, 2, 3\}\).
+    \item \textbf{Element:} If \(x\) is in \(A\), we write \(x \in A\).
+    \item \textbf{Empty Set:} The set with no elements, denoted \(\emptyset\).
+    \item \textbf{Subset:} \(A \subseteq B\) if every element of \(A\) is also in \(B\).
+\end{itemize}
+
+\subsection{Set Operations}
+\begin{itemize}
+    \item \textbf{Union (\(\cup\)):} \(A \cup B = \{x : x \in A \text{ or } x \in B\}\).
+    \item \textbf{Intersection (\(\cap\)):} \(A \cap B = \{x : x \in A \text{ and } x \in B\}\).
+    \item \textbf{Difference (\(\setminus\)):} \(A \setminus B = \{x : x \in A \text{ and } x \notin B\}\).
+    \item \textbf{Complement (\(A^c\)):} \(A^c = \{x : x \notin A\}\).
+\end{itemize}
+
+\subsection{Power Set}
+The power set of \(A\), denoted \(\mathcal{P}(A)\), is the set of all subsets of \(A\).
+\[\mathcal{P}(\{1, 2\}) = \{\emptyset, \{1\}, \{2\}, \{1, 2\}\}\]
+
+\subsection{Cartesian Product}
+The Cartesian product of \(A\) and \(B\), denoted \(A \times B\), is the set of ordered pairs:
+\[A \times B = \{(a, b) : a \in A, b \in B\}\]
+
+\subsection{Venn Diagrams}
+Venn diagrams visually represent set operations and relationships.
+
+\section{Conclusion}
+This guide introduces the basics of logic, quantifiers, and set theory. Mastery of these topics provides a strong foundation for advanced studies in mathematics, computer science, and related fields.
+
+\end{document}

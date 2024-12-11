@@ -1,0 +1,16 @@
+\contentsline {section}{\numberline {1}Introduction}{1}{}%
+\contentsline {section}{\numberline {2}Logic Basics}{1}{}%
+\contentsline {subsection}{\numberline {2.1}Propositional Logic}{2}{}%
+\contentsline {subsection}{\numberline {2.2}Truth Tables}{2}{}%
+\contentsline {subsection}{\numberline {2.3}Logical Equivalence}{2}{}%
+\contentsline {section}{\numberline {3}Quantifiers}{2}{}%
+\contentsline {subsection}{\numberline {3.1}Universal Quantifier (\(\forall \))}{2}{}%
+\contentsline {subsection}{\numberline {3.2}Existential Quantifier (\(\exists \))}{2}{}%
+\contentsline {subsection}{\numberline {3.3}Negating Quantifiers}{3}{}%
+\contentsline {section}{\numberline {4}Set Theory}{3}{}%
+\contentsline {subsection}{\numberline {4.1}Basic Concepts}{3}{}%
+\contentsline {subsection}{\numberline {4.2}Set Operations}{3}{}%
+\contentsline {subsection}{\numberline {4.3}Power Set}{3}{}%
+\contentsline {subsection}{\numberline {4.4}Cartesian Product}{3}{}%
+\contentsline {subsection}{\numberline {4.5}Venn Diagrams}{3}{}%
+\contentsline {section}{\numberline {5}Conclusion}{3}{}%
