@@ -1,0 +1,100 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\title{Basic Algebraic Structures: An Introduction}
+\author{}
+\date{}
+\begin{document}
+
+\maketitle
+
+\section*{Introduction}
+Understanding algebraic structures is like learning the rules of different "games" in mathematics. Each structure has specific rules that define how numbers or objects interact with each other. Let’s explore these structures step by step, starting from familiar concepts.
+
+\section{Sets and Operations}
+A \textbf{set} is simply a collection of objects. For example:
+\[ \text{Set of integers: } \mathbb{Z} = \{ \dots, -2, -1, 0, 1, 2, \dots \}. \]
+
+An \textbf{operation} is a rule that takes two elements from a set and combines them to produce another element in the same set. Common operations include addition ($+$), subtraction ($-$), and multiplication ($\cdot$).
+
+\section{Groups}
+A \textbf{group} is a set with an operation that satisfies the following four rules:
+\begin{enumerate}
+    \item \textbf{Closure:} If $a, b$ are in the set, then $a \cdot b$ is also in the set.
+    \item \textbf{Associativity:} $(a \cdot b) \cdot c = a \cdot (b \cdot c)$ for all $a, b, c$ in the set.
+    \item \textbf{Identity Element:} There is an element $e$ such that $a \cdot e = a$ for all $a$.
+    \item \textbf{Inverse:} For every $a$, there exists $b$ such that $a \cdot b = e$.
+\end{enumerate}
+Example: The set of integers $\mathbb{Z}$ under addition is a group. The identity is $0$, and the inverse of $a$ is $-a$.
+
+\section{Rings}
+A \textbf{ring} is a set equipped with two operations, usually called addition ($+$) and multiplication ($\cdot$), that satisfy:
+\begin{itemize}
+    \item \textbf{Addition forms a group:} The set with addition is a group.
+    \item \textbf{Multiplication is associative:} $(a \cdot b) \cdot c = a \cdot (b \cdot c)$.
+    \item \textbf{Distributive laws:} $a \cdot (b + c) = (a \cdot b) + (a \cdot c)$ and $(a + b) \cdot c = (a \cdot c) + (b \cdot c)$.
+\end{itemize}
+Example: The set of integers $\mathbb{Z}$ is a ring.
+
+\section{Fields}
+A \textbf{field} is a ring where:
+\begin{itemize}
+    \item Multiplication also forms a group (excluding $0$).
+    \item Every nonzero element has a multiplicative inverse.
+\end{itemize}
+Example: The set of rational numbers $\mathbb{Q}$ is a field.
+
+\section{Polynomials}
+Polynomials are expressions like $p(x) = 2x^2 + 3x + 1$. The set of all polynomials with coefficients from a field (e.g., $\mathbb{Q}[x]$) forms a ring. Operations like addition and multiplication follow the same rules as numbers.
+
+\section{$\mathbb{Z}/n\mathbb{Z}$ (Integers Modulo $n$)}
+The set $\mathbb{Z}/n\mathbb{Z}$ consists of integers $0, 1, \dots, n-1$, where addition and multiplication "wrap around" after $n$. 
+
+\subsection{Case 1: $n$ is Prime}
+If $n$ is a prime number, $\mathbb{Z}/n\mathbb{Z}$ is a \textbf{field}. This means:
+\begin{itemize}
+    \item Addition and multiplication are well-defined.
+    \item Every nonzero element has a multiplicative inverse.
+\end{itemize}
+Example: In $\mathbb{Z}/5\mathbb{Z}$:
+\[ 4 + 3 \equiv 2 \pmod{5}, \quad 3 \cdot 4 \equiv 2 \pmod{5}. \]
+The inverse of $3$ (mod $5$) is $2$, since $3 \cdot 2 \equiv 1 \pmod{5}$.
+
+\subsection{Case 2: $n$ is Composite}
+If $n$ is not prime, $\mathbb{Z}/n\mathbb{Z}$ is \textbf{not a field}, because some elements do not have inverses. For instance, in $\mathbb{Z}/6\mathbb{Z}$:
+\[ 2 \cdot 3 \equiv 0 \pmod{6}, \]
+so $2$ has no inverse.
+
+$\mathbb{Z}/n\mathbb{Z}$ is still a \textbf{ring} in this case, but not all the properties of a field hold.
+
+\section{Matrices}
+A \textbf{matrix} is a rectangular array of numbers. For example:
+\[ A = \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix}. \]
+Matrices can be added and multiplied under specific rules. 
+
+\subsection{Matrix Properties}
+\begin{itemize}
+    \item \textbf{Addition:} Matrices of the same dimensions can be added element by element.
+    \item \textbf{Multiplication:} The product of two matrices $A$ and $B$ is defined if the number of columns in $A$ equals the number of rows in $B$.
+    \item \textbf{Determinant:} A square matrix has an inverse if and only if its determinant is nonzero.
+\end{itemize}
+The set of $n \times n$ matrices with entries from a field forms a \textbf{ring}, but not a field since not all matrices have inverses.
+
+\section{Preparing for Vector Spaces}
+To study vector spaces, we need to understand fields because vectors are defined over fields. In vector spaces:
+\begin{itemize}
+    \item Scalars come from a field (e.g., $\mathbb{R}$ or $\mathbb{Z}/p\mathbb{Z}$).
+    \item Operations like addition and scalar multiplication must follow the rules of the field.
+\end{itemize}
+
+\subsection{Connecting to Algebraic Structures}
+\begin{itemize}
+    \item Fields provide the framework for scalar multiplication.
+    \item Understanding $\mathbb{Z}/n\mathbb{Z}$ helps with modular arithmetic, which is useful in computer science and cryptography.
+    \item Matrix operations link directly to transformations in vector spaces.
+\end{itemize}
+
+By mastering these structures, you are ready to dive into the study of vector spaces, which combine algebraic and geometric ideas. Understanding $\mathbb{Z}/n\mathbb{Z}$, especially when $n$ is prime, will help you see how fields work in abstract settings, paving the way to more advanced topics.
+
+\end{document}
