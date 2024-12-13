@@ -1,0 +1,18 @@
+\contentsline {section}{\numberline {1}Introduction to Linear Regression}{2}{section.1}%
+\contentsline {section}{\numberline {2}Key Concepts}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Assumptions of Linear Regression}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Types of Linear Regression}{2}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Steps to Apply Linear Regression}{2}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Step 1: Data Collection}{2}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Step 2: Exploratory Data Analysis (EDA)}{3}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Step 3: Data Preprocessing}{3}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Step 4: Splitting the Data}{3}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Step 5: Fitting the Model}{3}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Step 6: Evaluating the Model}{3}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Step 7: Making Predictions}{3}{subsection.3.7}%
+\contentsline {section}{\numberline {4}Applications of Linear Regression}{3}{section.4}%
+\contentsline {section}{\numberline {5}Example: Simple Linear Regression}{4}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Step 1: Dataset}{4}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Step 2: Fit the Model}{4}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Step 3: Prediction}{4}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Conclusion}{4}{section.6}%
