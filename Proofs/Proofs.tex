@@ -92,6 +92,43 @@ Proof by contradiction involves assuming the negation of the statement to be pro
 
 \newpage
 
+\section{Proof by Contrapositive}
+Proof by contrapositive involves proving a statement by showing that its contrapositive is true. Recall that a statement "if $P$, then $Q$" is logically equivalent to "if not $Q$, then not $P$."
+
+\subsection{Example 1: Easy}
+\textbf{Statement:} If $n^2$ is even, then $n$ is even.
+
+\textbf{Proof:}
+\begin{itemize}
+    \item Contrapositive: If $n$ is odd, then $n^2$ is odd.
+    \item Assume $n$ is odd. By definition, $n = 2k+1$ for some integer $k$.
+    \item Calculate $n^2$: $n^2 = (2k+1)^2 = 4k^2 + 4k + 1 = 2(2k^2 + 2k) + 1$.
+    \item Since $2k^2 + 2k$ is an integer, $n^2$ is odd.\qed
+\end{itemize}
+
+\subsection{Example 2: Medium}
+\textbf{Statement:} If $a \cdot b = 0$, then $a = 0$ or $b = 0$.
+
+\textbf{Proof:}
+\begin{itemize}
+    \item Contrapositive: If $a \neq 0$ and $b \neq 0$, then $a \cdot b \neq 0$.
+    \item Assume $a \neq 0$ and $b \neq 0$. By definition, both $a$ and $b$ are nonzero numbers.
+    \item The product of two nonzero numbers is nonzero: $a \cdot b \neq 0$.\qed
+\end{itemize}
+
+\subsection{Example 3: Advanced}
+\textbf{Statement:} If a number is not divisible by 3, then its square is not divisible by 3.
+
+\textbf{Proof:}
+\begin{itemize}
+    \item Contrapositive: If a number's square is divisible by 3, then the number is divisible by 3.
+    \item Assume $n^2$ is divisible by 3. Then $n^2 = 3k$ for some integer $k$.
+    \item If $n^2$ is divisible by 3, then $n$ must also be divisible by 3 (since 3 is prime).
+    \item Thus, if $n^2$ is divisible by 3, then $n$ is divisible by 3.\qed
+\end{itemize}
+
+\newpage
+
 \section{Proof by Induction}
 Proof by induction is used to prove statements about integers. It consists of a base case and an inductive step.
 
@@ -141,3 +178,4 @@ Proof by induction is used to prove statements about integers. It consists of a 
 In this document, we have explored various methods of mathematical proofs, providing clear, step-by-step examples of each method with increasing levels of difficulty. These examples illustrate the power and utility of mathematical reasoning in establishing truths across diverse domains.
 
 \end{document}
+
