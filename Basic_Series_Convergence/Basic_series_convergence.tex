@@ -1,0 +1,152 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage{amsmath, amssymb, amsthm, enumitem, geometry}
+\geometry{margin=1in}
+
+\title{Comprehensive Guide to Series and Convergence Tests}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Introduction to Series}
+A series is the sum of the terms of a sequence \( \{a_n\} \):
+\[
+S = \sum_{n=1}^\infty a_n.
+\]
+Key questions about a series are whether it converges and under what conditions. This document covers the fundamental concepts, conditions, and various convergence tests.
+
+\section{Necessary Condition for Convergence}
+A necessary condition for the convergence of a series \(\sum a_n\) is:
+\[
+\lim_{n \to \infty} a_n = 0.
+\]
+If this condition is not met, the series diverges. Note that this condition is not sufficient for convergence.
+
+\subsection*{Examples}
+\begin{enumerate}
+    \item \(a_n = \frac{1}{n}\):
+    \[\lim_{n \to \infty} a_n = 0,\]
+    but \(\sum \frac{1}{n}\) diverges (harmonic series).
+    
+    \item \(a_n = \frac{1}{n^2}\):
+    \[\lim_{n \to \infty} a_n = 0,\]
+    and \(\sum \frac{1}{n^2}\) converges (p-series with \(p > 1\)).
+
+    \item \(a_n = \frac{\sin(n)}{n}\):
+    \[\lim_{n \to \infty} a_n = 0,\]
+    but additional tests are required to determine convergence.
+\end{enumerate}
+
+\pagebreak
+
+\section{Absolutely and Conditionally Convergent Series}
+\textbf{Absolute convergence:} \(\sum |a_n|\) converges.
+
+\textbf{Conditional convergence:} \(\sum a_n\) converges, but \(\sum |a_n|\) diverges.
+
+\subsection*{Examples}
+\begin{enumerate}
+    \item \(a_n = \frac{(-1)^n}{n}\):\
+    \(\sum a_n\) converges conditionally (alternating harmonic series).
+
+    \item \(a_n = \frac{(-1)^n}{n^2}\):\
+    \(\sum a_n\) converges absolutely (p-series with \(p > 1\)).
+
+    \item \(a_n = \frac{(-1)^n}{\sqrt{n}}\):\
+    \(\sum a_n\) converges conditionally.
+\end{enumerate}
+
+\section{Convergence Tests}
+
+\subsection{Ratio Test (d'Alembert's Criterion)}
+This test examines the ratio of consecutive terms:
+\[\lim_{n \to \infty} \left|\frac{a_{n+1}}{a_n}\right| = L.\]
+\begin{itemize}
+    \item If \(L < 1\), the series converges absolutely.
+    \item If \(L > 1\) or \(L = \infty\), the series diverges.
+    \item If \(L = 1\), the test is inconclusive.
+\end{itemize}
+
+\subsection*{Examples}
+\begin{enumerate}
+    \item \(a_n = \frac{1}{n!}\):
+    \[\lim_{n \to \infty} \frac{a_{n+1}}{a_n} = 0 < 1,\]
+    hence the series converges absolutely.
+
+    \item \(a_n = \frac{1}{2^n}\):
+    \[\lim_{n \to \infty} \frac{a_{n+1}}{a_n} = \frac{1}{2} < 1,\]
+    hence the series converges absolutely.
+
+    \item \(a_n = \frac{n}{n^2 + 1}\):
+    \[\lim_{n \to \infty} \frac{a_{n+1}}{a_n} = 1,\]
+    test is inconclusive.
+\end{enumerate}
+
+\pagebreak
+
+\subsection{Alternating Series Test (Leibniz's Criterion)}
+This test applies to series of the form \(\sum (-1)^n a_n\), where \(a_n\) are positive terms.
+\begin{itemize}
+    \item The terms \(|a_n|\) must decrease monotonically.
+    \item \(\lim_{n \to \infty} a_n = 0\).
+\end{itemize}
+If these conditions are met, the series converges.
+
+\subsection*{Examples}
+\begin{enumerate}
+    \item \(a_n = \frac{1}{n}\): Alternating harmonic series.
+    \item \(a_n = \frac{1}{n^2}\): Converges absolutely.
+    \item \(a_n = \frac{1}{\sqrt{n}}\): Converges conditionally.
+\end{enumerate}
+
+\subsection{Integral Test}
+The integral test compares the series \(\sum a_n\) with the improper integral \(\int_1^\infty f(x) dx\):
+\begin{itemize}
+    \item If \(f(x)\) is positive, continuous, and decreasing for \(x \geq 1\), then the convergence of \(\sum a_n\) and \(\int_1^\infty f(x)dx\) is the same.
+\end{itemize}
+
+\subsection*{Examples}
+\begin{enumerate}
+    \item \(a_n = \frac{1}{n^2}\):
+    \[\int_1^\infty \frac{1}{x^2} dx = 1,\]
+    hence the series converges.
+
+    \item \(a_n = \frac{1}{n}\): Harmonic series diverges.
+
+    \item \(a_n = \frac{1}{n \ln(n)}\): Diverges.
+\end{enumerate}
+
+\subsection{Raabe's Test}
+This test refines the ratio test by considering:
+\[n \left(\frac{a_n}{a_{n+1}} - 1\right) = R.\]
+\begin{itemize}
+    \item If \(R > 1\), the series converges absolutely.
+    \item If \(R < 1\), the series diverges.
+    \item If \(R = 1\), the test is inconclusive.
+\end{itemize}
+
+\subsection*{Examples}
+\begin{enumerate}
+    \item \(a_n = \frac{1}{n!}\): Converges absolutely.
+    \item \(a_n = \frac{1}{n^2}\): Converges absolutely.
+    \item \(a_n = \frac{1}{\ln(n) n}\): Diverges.
+\end{enumerate}
+
+\subsection{Cauchy Condensation Test}
+This test applies to positive, decreasing sequences \(a_n\):
+\[\sum a_n \text{ converges if and only if } \sum 2^n a_{2^n} \text{ converges.}\]
+It simplifies series with terms decreasing rapidly.
+
+\subsection*{Examples}
+\begin{enumerate}
+    \item \(a_n = \frac{1}{n^2}\): Condensation yields \(\sum \frac{1}{2^n}\), which converges.
+    \item \(a_n = \frac{1}{n}\): Condensation yields \(\sum 1\), which diverges.
+    \item \(a_n = \frac{1}{n \ln(n)}\): Condensation shows divergence.
+\end{enumerate}
+
+\section{Conclusion}
+This document provides a detailed overview of series and convergence tests, with examples ranging from basic to slightly more advanced. Mastering these concepts and methods is essential for understanding the behavior of series in mathematical analysis.
+
+\end{document}
