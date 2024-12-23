@@ -1,0 +1,127 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\title{Comprehensive Introduction to Calculus 1: Topics, Examples, and Explanations}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Introduction}
+Calculus is a branch of mathematics that studies continuous change. It is divided into two main branches: differential calculus and integral calculus. In this article, we will explore fundamental topics in Calculus 1, including limits, derivatives, integrals (definite and indefinite), partial derivatives, and their applications, with detailed examples and explanations.
+
+\section{Limits}
+Limits form the foundation of calculus and describe the behavior of a function as the input approaches a specific value.
+
+\subsection*{Definition of a Limit}
+The limit of a function $f(x)$ as $x$ approaches $c$ is written as:
+\[ \lim_{x \to c} f(x) = L \]
+This means that as $x$ gets arbitrarily close to $c$, $f(x)$ approaches $L$.
+
+\subsection*{One-Sided Limits}
+One-sided limits consider the behavior of $f(x)$ as $x$ approaches $c$ from one side:
+\begin{itemize}
+    \item \textbf{Left-hand limit:} $\lim_{x \to c^-} f(x)$
+    \item \textbf{Right-hand limit:} $\lim_{x \to c^+} f(x)$
+\end{itemize}
+A limit exists only if the left-hand and right-hand limits are equal.
+
+\subsection*{Example:}
+Evaluate $\lim_{x \to 0^+} \frac{1}{x}$ and $\lim_{x \to 0^-} \frac{1}{x}$.
+
+\subsubsection*{Solution:}
+\begin{itemize}
+    \item For $x \to 0^+$, $\frac{1}{x} \to \infty$.
+    \item For $x \to 0^-$, $\frac{1}{x} \to -\infty$.
+\end{itemize}
+Since the left-hand and right-hand limits are not equal, $\lim_{x \to 0} \frac{1}{x}$ does not exist.
+
+\section{Derivatives}
+The derivative represents the rate of change of a function with respect to its variable.
+
+\subsection*{Definition of the Derivative}
+The derivative of a function $f(x)$ at a point $x = c$ is defined as:
+\[ f'(c) = \lim_{h \to 0} \frac{f(c + h) - f(c)}{h}. \]
+This measures the instantaneous rate of change of $f(x)$ at $x = c$.
+
+\subsection*{Basic Derivative Rules}
+\begin{itemize}
+    \item \textbf{Power Rule:} $\frac{d}{dx}[x^n] = nx^{n-1}$.
+    \item \textbf{Sum Rule:} $\frac{d}{dx}[f(x) + g(x)] = f'(x) + g'(x)$.
+    \item \textbf{Product Rule:} $\frac{d}{dx}[f(x)g(x)] = f'(x)g(x) + f(x)g'(x)$.
+    \item \textbf{Quotient Rule:} $\frac{d}{dx}\left[\frac{f(x)}{g(x)}\right] = \frac{f'(x)g(x) - f(x)g'(x)}{g(x)^2}$.
+    \item \textbf{Chain Rule:} $\frac{d}{dx}[f(g(x))] = f'(g(x))g'(x)$.
+\end{itemize}
+
+\subsection*{Example: Finding a Derivative Using the Chain Rule}
+Find the derivative of $f(x) = (3x^2 + 2)^5$.
+
+\subsubsection*{Solution:}
+Using the Chain Rule:
+\[ f'(x) = 5(3x^2 + 2)^4 \cdot (6x) = 30x(3x^2 + 2)^4. \]
+
+\section{Partial Derivatives}
+Partial derivatives are used for functions of multiple variables to measure the rate of change with respect to one variable while keeping others constant.
+
+\subsection*{Definition of a Partial Derivative}
+Let $f(x, y)$ be a function of two variables. The partial derivatives are defined as:
+\[ \frac{\partial f}{\partial x} = \lim_{h \to 0} \frac{f(x + h, y) - f(x, y)}{h}, \quad \frac{\partial f}{\partial y} = \lim_{h \to 0} \frac{f(x, y + h) - f(x, y)}{h}. \]
+
+\subsection*{Example:}
+Find $\frac{\partial f}{\partial x}$ and $\frac{\partial f}{\partial y}$ for $f(x, y) = x^2y + e^y$.
+
+\subsubsection*{Solution:}
+\begin{itemize}
+    \item $\frac{\partial f}{\partial x} = 2xy$
+    \item $\frac{\partial f}{\partial y} = x^2 + e^y$
+\end{itemize}
+
+\section{Integrals}
+Integration is the reverse process of differentiation and is used to compute areas, volumes, and accumulated quantities.
+
+\subsection{Indefinite Integrals}
+An indefinite integral represents the antiderivative of a function and is written as:
+\[ \int f(x)\,dx = F(x) + C, \]
+where $F'(x) = f(x)$ and $C$ is the constant of integration.
+
+\subsection*{Example:}
+Find $\int (3x^2 - 4x + 1)\,dx$.
+
+\subsubsection*{Solution:}
+Use the power rule in reverse:
+\[ \int (3x^2 - 4x + 1)\,dx = x^3 - 2x^2 + x + C. \]
+
+\subsection{Definite Integrals}
+A definite integral computes the accumulation of a quantity over an interval $[a, b]$ and is written as:
+\[ \int_a^b f(x)\,dx = F(b) - F(a), \]
+where $F(x)$ is the antiderivative of $f(x)$.
+
+\subsection*{Example:}
+Evaluate $\int_0^2 (2x + 1)\,dx$.
+
+\subsubsection*{Solution:}
+Find the antiderivative:
+\[ \int (2x + 1)\,dx = x^2 + x. \]
+Evaluate at the limits:
+\[ \int_0^2 (2x + 1)\,dx = (2^2 + 2) - (0^2 + 0) = 6. \]
+
+\subsection{Improper Integrals}
+Improper integrals are used when the interval of integration is infinite or the integrand has a discontinuity.
+
+\subsection*{Example:}
+Evaluate $\int_1^\infty \frac{1}{x^2}\,dx$.
+
+\subsubsection*{Solution:}
+Find the antiderivative:
+\[ \int \frac{1}{x^2}\,dx = -\frac{1}{x}. \]
+Evaluate the limit:
+\[ \int_1^\infty \frac{1}{x^2}\,dx = \lim_{b \to \infty} \left(-\frac{1}{b} + \frac{1}{1}\right) = 1. \]
+
+\section*{Conclusion}
+This article presents a comprehensive introduction to Calculus 1, covering limits, derivatives, partial derivatives, and different types of integrals with detailed examples. Mastery of these topics forms a strong foundation for advanced studies in mathematics, science, and engineering.
+
+\end{document}
