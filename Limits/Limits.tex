@@ -1,0 +1,114 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\title{An Introduction to Limits in Mathematics}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction to Limits}
+Limits form a fundamental concept in calculus and mathematical analysis. They describe the behavior of a function as its input approaches a particular point or infinity. Limits help formalize ideas like continuity, derivatives, and integrals.
+
+\subsection{Definition of a Limit}
+The limit of a function $f(x)$ as $x$ approaches $a$ is denoted as:
+\[
+\lim_{x \to a} f(x) = L
+\]
+This means that as $x$ gets arbitrarily close to $a$, $f(x)$ gets arbitrarily close to $L$. For a formal definition:
+For every $\epsilon > 0$, there exists a $\delta > 0$ such that if $0 < |x - a| < \delta$, then $|f(x) - L| < \epsilon$.
+
+\subsection{Intuition}
+Limits capture the trend of a function, even if it does not reach the value at a certain point. For instance, $f(x) = \frac{1}{x}$ does not reach any finite value as $x \to 0$, but its limit behavior is clear: $f(x) \to \infty$ or $-\infty$, depending on the direction.
+
+\section{Calculating Limits}
+
+\subsection{Limit at a Point ($x_0$)}
+Using the definition of limits, we calculate the value of a function as $x$ approaches a specific point $x_0$.
+
+\subsubsection{Example: A Simple Function}
+\[
+\lim_{x \to 2} (x^2 - 3x + 2)
+\]
+Substituting directly:
+\[
+2^2 - 3(2) + 2 = 4 - 6 + 2 = 0.
+\]
+
+\subsection{Overall Limit: The Derivative}
+The derivative of a function at a point is defined using limits:
+\[
+\lim_{h \to 0} \frac{f(x+h) - f(x)}{h}.
+\]
+For example, if $f(x) = x^2$, the derivative at $x$ is:
+\[
+\lim_{h \to 0} \frac{(x+h)^2 - x^2}{h} = \lim_{h \to 0} \frac{x^2 + 2xh + h^2 - x^2}{h} = \lim_{h \to 0} (2x + h) = 2x.
+\]
+
+\section{Special Techniques and Formulas for Limits}
+
+\subsection{Greatest $x$ Limits Rule}
+For polynomials or rational functions, the term with the highest power dominates as $x \to \infty$ or $x \to -\infty$:
+\[
+\lim_{x \to \infty} \frac{2x^3 + 5x}{3x^3 - 4} = \frac{2}{3}.
+\]
+This is because the highest degree terms $2x^3$ and $3x^3$ dominate the numerator and denominator respectively.
+
+\subsection{Conjugate Rule for Square Root Expressions}
+Used for limits involving square roots, this rule simplifies the expression by multiplying by the conjugate:
+\[
+\lim_{x \to 1} \frac{\sqrt{x+3} - 2}{x-1}
+\]
+Multiply numerator and denominator by the conjugate:
+\[
+\frac{\sqrt{x+3} - 2}{x-1} \cdot \frac{\sqrt{x+3} + 2}{\sqrt{x+3} + 2} = \frac{(x+3) - 4}{(x-1)(\sqrt{x+3} + 2)} = \frac{x-1}{(x-1)(\sqrt{x+3} + 2)}.
+\]
+Cancel the common term $x-1$:
+\[
+\frac{1}{\sqrt{x+3} + 2} \to \frac{1}{4} \quad \text{as } x \to 1.
+\]
+
+\subsection{Euler's Limit}
+A fundamental limit that defines the base of natural logarithms $e$:
+\[
+\lim_{n \to \infty} \left(1 + \frac{1}{n}\right)^n = e.
+\]
+This result is central in calculus and appears in compound interest and growth models.
+
+\subsection{Logarithmic and Exponential Limits}
+\[
+\lim_{x \to 0^+} x \ln(x) = 0.
+\]
+\[
+\lim_{x \to \infty} \frac{\ln(x)}{x} = 0.
+\]
+
+\subsection{Arithmetic and Geometric Sequence Limits}
+The sum of an arithmetic sequence:
+\[
+S_n = \frac{a_1 + a_n}{2} \cdot n.
+\]
+The sum of a geometric sequence:
+\[
+S_n = a_1 \cdot \frac{1-q^n}{1-q}, \quad |q| < 1.
+\]
+
+\subsection{Limits Involving Trigonometric Functions}
+For small angles (in radians):
+\[
+\lim_{x \to 0} \frac{\sin(x)}{x} = 1, \quad \lim_{x \to 0} \frac{1 - \cos(x)}{x^2} = \frac{1}{2}.
+\]
+
+\section{Applications of Limits}
+
+\subsection{Science and Engineering}
+Limits are crucial in physics (e.g., defining instantaneous velocity), economics (e.g., marginal costs), and computer science (e.g., asymptotic analysis).
+
+\subsection{Understanding Asymptotic Behavior}
+In mathematics, limits help in analyzing the growth and decay of functions, studying infinite series, and solving differential equations.
+
+\end{document}
