@@ -1,0 +1,95 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+
+\title{Derivatives of Composite Functions: A Thorough Exploration}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This document explores the concept of derivatives of composite functions, providing a step-by-step guide for calculation and a series of illustrative examples with varying levels of difficulty. The goal is to demystify the process and enable the reader to handle such derivatives confidently.
+\end{abstract}
+
+\section{Introduction}
+In calculus, derivatives are used to measure the rate of change of a function. Derivatives of composite functions occur when functions are derived repeatedly or involve compositions of differentiable functions. Understanding how to calculate these derivatives is crucial for advanced studies in mathematics, physics, and engineering.
+
+\section{Theory and Approach}
+To compute derivatives of composite functions, follow these steps:
+\begin{enumerate}
+    \item \textbf{Understand the Function:} Identify the structure of the function. Composite derivatives typically involve compositions of functions, such as $f(g(x))$, or repeated differentiation, such as $f^{(n)}(x)$.
+    \item \textbf{Apply the Chain Rule:} The chain rule is essential when differentiating compositions. For $h(x) = f(g(x))$, the derivative is:
+    \[
+    h'(x) = f'(g(x)) \cdot g'(x).
+    \]
+    \item \textbf{Differentiate Repeatedly:} For higher-order derivatives, continue applying the chain rule or product rule as required. Simplify at each step.
+    \item \textbf{Look for Patterns:} In many cases, patterns emerge that simplify computation for higher orders of derivatives.
+\end{enumerate}
+
+\section{Examples}
+
+\subsection{Example 1: Basic Derivative of a Composite Function}
+Calculate the first derivative of $f(g(x)) = \sin(x^2)$. \\
+\textbf{Solution:}
+\begin{align*}
+\text{Let } f(u) &= \sin(u), \quad g(x) = x^2. \\
+f'(u) &= \cos(u), \quad g'(x) = 2x. \\
+h'(x) &= f'(g(x)) \cdot g'(x) = \cos(x^2) \cdot 2x.
+\end{align*}
+
+\subsection{Example 2: Second Derivative of a Composite Function}
+Compute the second derivative of $f(x) = e^{x^2}$. \\
+\textbf{Solution:}
+\begin{align*}
+f'(x) &= 2x e^{x^2}, \\
+f''(x) &= \frac{d}{dx}[2x e^{x^2}] \\
+&= 2 e^{x^2} + 2x \cdot 2x e^{x^2} \\
+&= 2e^{x^2}(1 + 2x^2).
+\end{align*}
+
+\subsection{Example 3: Product of Functions with Composite Derivatives}
+Differentiate $h(x) = x^2 \sin(x^2)$ twice. \\
+\textbf{Solution:}
+\begin{align*}
+h'(x) &= \frac{d}{dx}[x^2] \sin(x^2) + x^2 \cdot \frac{d}{dx}[\sin(x^2)] \\
+&= 2x \sin(x^2) + x^2 \cdot \cos(x^2) \cdot 2x \\
+&= 2x \sin(x^2) + 2x^3 \cos(x^2). \\
+h''(x) &= \frac{d}{dx}[2x \sin(x^2)] + \frac{d}{dx}[2x^3 \cos(x^2)] \\
+&= 2 \sin(x^2) + 2x \cdot 2x \cos(x^2) + 6x^2 \cos(x^2) + 2x^3 \cdot \frac{d}{dx}[\cos(x^2)] \\
+&= 2 \sin(x^2) + 4x^2 \cos(x^2) + 6x^2 \cos(x^2) - 4x^4 \sin(x^2) \\
+&= 2 \sin(x^2) + 10x^2 \cos(x^2) - 4x^4 \sin(x^2).
+\end{align*}
+
+\subsection{Example 4: Composite Derivatives Involving Logarithms}
+Find $\frac{d^2}{dx^2} \ln(x^2 + 1)$. \\
+\textbf{Solution:}
+\begin{align*}
+f'(x) &= \frac{1}{x^2 + 1} \cdot 2x = \frac{2x}{x^2 + 1}, \\
+f''(x) &= \frac{d}{dx}\left(\frac{2x}{x^2 + 1}\right) \\
+&= \frac{(x^2 + 1)(2) - 2x(2x)}{(x^2 + 1)^2} \\
+&= \frac{2(x^2 + 1 - 2x^2)}{(x^2 + 1)^2} \\
+&= \frac{2(1 - x^2)}{(x^2 + 1)^2}.
+\end{align*}
+
+\subsection{Example 5: Higher-Order Composite Derivative}
+Compute the third derivative of $f(x) = \tan(x)$. \\
+\textbf{Solution:}
+\begin{align*}
+f'(x) &= \sec^2(x), \\
+f''(x) &= \frac{d}{dx}[\sec^2(x)] = 2\sec^2(x)\tan(x), \\
+f'''(x) &= \frac{d}{dx}[2\sec^2(x)\tan(x)] \\
+&= 2 \left(\frac{d}{dx}[\sec^2(x)] \tan(x) + \sec^2(x) \frac{d}{dx}[\tan(x)]\right) \\
+&= 2 \left(2\sec^2(x)\tan^2(x) + \sec^4(x)\right) \\
+&= 4\sec^2(x)\tan^2(x) + 2\sec^4(x).
+\end{align*}
+
+\section{Conclusion}
+The computation of derivatives of composite functions requires careful application of differentiation rules, such as the chain rule and product rule. Recognizing patterns and simplifying expressions can significantly ease the process, especially for higher-order derivatives. Mastery of these techniques is essential for tackling complex problems in advanced mathematics and its applications.
+
+\end{document}
