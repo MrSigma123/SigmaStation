@@ -1,0 +1,19 @@
+\contentsline {section}{\numberline {1}Introduction to Vectors}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Representation of Vectors}{2}{subsection.1.1}%
+\contentsline {paragraph}{Example:}{2}{section*.2}%
+\contentsline {section}{\numberline {2}Vector Operations}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Scalar Multiplication}{2}{subsection.2.1}%
+\contentsline {paragraph}{Mathematical Definition:}{2}{section*.3}%
+\contentsline {paragraph}{Example:}{2}{section*.4}%
+\contentsline {subsection}{\numberline {2.2}Vector Addition and Subtraction}{2}{subsection.2.2}%
+\contentsline {paragraph}{Example:}{2}{section*.5}%
+\contentsline {subsection}{\numberline {2.3}Dot Product (Scalar Product)}{3}{subsection.2.3}%
+\contentsline {paragraph}{Mathematical Definition:}{3}{section*.6}%
+\contentsline {paragraph}{Example:}{3}{section*.7}%
+\contentsline {paragraph}{Application: Work}{3}{section*.8}%
+\contentsline {subsection}{\numberline {2.4}Cross Product (Vector Product)}{3}{subsection.2.4}%
+\contentsline {paragraph}{Mathematical Definition:}{3}{section*.9}%
+\contentsline {paragraph}{Example:}{3}{section*.10}%
+\contentsline {paragraph}{Application: Moment of Inertia}{3}{section*.11}%
+\contentsline {paragraph}{Example:}{4}{section*.12}%
+\contentsline {section}{\numberline {3}Conclusion}{4}{section.3}%

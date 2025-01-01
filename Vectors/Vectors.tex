@@ -1,0 +1,138 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb, graphicx, hyperref}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\usepackage{tikz}
+\usepackage{float}
+
+\title{\textbf{Comprehensive Guide to Vectors and Their Operations}}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+
+\section{Introduction to Vectors}
+A \textbf{vector} is a mathematical object that has both magnitude and direction. Vectors are used to represent quantities such as displacement, velocity, force, and acceleration in physics and engineering. Unlike \textbf{scalars}, which only have magnitude (e.g., temperature, mass), vectors describe a physical phenomenon more completely.
+
+\subsection{Representation of Vectors}
+A vector is typically represented as:
+\begin{itemize}
+    \item A directed line segment with an arrow.
+    \item In component form: $\mathbf{v} = \langle v_x, v_y, v_z \rangle$ in three-dimensional space.
+    \item In unit vector notation: $\mathbf{v} = v_x \mathbf{i} + v_y \mathbf{j} + v_z \mathbf{k}$.
+\end{itemize}
+
+\paragraph{Example:} A vector $\mathbf{v}$ in two dimensions can be written as $\mathbf{v} = \langle 3, 4 \rangle$ or $\mathbf{v} = 3\mathbf{i} + 4\mathbf{j}$.
+
+\section{Vector Operations}
+
+\subsection{Scalar Multiplication}
+Scalar multiplication involves multiplying a vector by a scalar (a real number). This changes the magnitude of the vector but not its direction (unless the scalar is negative, in which case the direction reverses).
+
+\paragraph{Mathematical Definition:}
+\[
+\text{If } \mathbf{v} = \langle v_x, v_y, v_z \rangle, \text{ then } k\mathbf{v} = \langle kv_x, kv_y, kv_z \rangle.
+\]
+
+\paragraph{Example:}
+Let $\mathbf{v} = \langle 2, -1 \rangle$ and $k = 3$. Then:
+\[
+k\mathbf{v} = 3\langle 2, -1 \rangle = \langle 6, -3 \rangle.
+\]
+
+\subsection{Vector Addition and Subtraction}
+\begin{itemize}
+    \item \textbf{Addition:} Add corresponding components: $\mathbf{u} + \mathbf{v} = \langle u_x + v_x, u_y + v_y, u_z + v_z \rangle$.
+    \item \textbf{Subtraction:} Subtract corresponding components: $\mathbf{u} - \mathbf{v} = \langle u_x - v_x, u_y - v_y, u_z - v_z \rangle$.
+\end{itemize}
+
+\paragraph{Example:}
+If $\mathbf{u} = \langle 1, 2 \rangle$ and $\mathbf{v} = \langle 3, -1 \rangle$:
+\[
+\mathbf{u} + \mathbf{v} = \langle 1+3, 2+(-1) \rangle = \langle 4, 1 \rangle.
+\]
+\[
+\mathbf{u} - \mathbf{v} = \langle 1-3, 2-(-1) \rangle = \langle -2, 3 \rangle.
+\]
+
+\subsection{Dot Product (Scalar Product)}
+The dot product of two vectors results in a scalar and measures how much one vector projects onto another.
+
+\paragraph{Mathematical Definition:}
+\[
+\mathbf{u} \cdot \mathbf{v} = u_xv_x + u_yv_y + u_zv_z.
+\]
+Alternatively, using magnitudes:
+\[
+\mathbf{u} \cdot \mathbf{v} = |\mathbf{u}| |\mathbf{v}| \cos \theta,
+\]
+where $\theta$ is the angle between the vectors.
+
+\paragraph{Example:}
+Let $\mathbf{u} = \langle 1, 2, 3 \rangle$ and $\mathbf{v} = \langle 4, -5, 6 \rangle$. Then:
+\[
+\mathbf{u} \cdot \mathbf{v} = (1)(4) + (2)(-5) + (3)(6) = 4 - 10 + 18 = 12.
+\]
+
+\paragraph{Application: Work}
+In physics, work is defined as the dot product of force and displacement:
+\[
+W = \mathbf{F} \cdot \mathbf{d}.
+\]
+If $\mathbf{F} = \langle 10, 0 \rangle$ N and $\mathbf{d} = \langle 5, 5 \rangle$ m, then:
+\[
+W = \mathbf{F} \cdot \mathbf{d} = (10)(5) + (0)(5) = 50\, \text{J}.
+\]
+
+\subsection{Cross Product (Vector Product)}
+The cross product of two vectors results in a vector that is perpendicular to both and has magnitude equal to the area of the parallelogram spanned by the vectors.
+
+\paragraph{Mathematical Definition:}
+\[
+\mathbf{u} \times \mathbf{v} = \begin{vmatrix}
+\mathbf{i} & \mathbf{j} & \mathbf{k} \\
+ u_x & u_y & u_z \\
+ v_x & v_y & v_z
+\end{vmatrix}.
+\]
+
+\paragraph{Example:}
+Let $\mathbf{u} = \langle 1, 2, 3 \rangle$ and $\mathbf{v} = \langle 4, -5, 6 \rangle$. Then:
+\[
+\mathbf{u} \times \mathbf{v} = \begin{vmatrix}
+\mathbf{i} & \mathbf{j} & \mathbf{k} \\
+ 1 & 2 & 3 \\
+ 4 & -5 & 6
+\end{vmatrix} = \mathbf{i}(2\cdot6 - 3\cdot(-5)) - \mathbf{j}(1\cdot6 - 3\cdot4) + \mathbf{k}(1\cdot(-5) - 2\cdot4).
+\]
+\[
+\mathbf{u} \times \mathbf{v} = \mathbf{i}(27) - \mathbf{j}(-6) + \mathbf{k}(-13) = 27\mathbf{i} + 6\mathbf{j} - 13\mathbf{k}.
+\]
+
+\paragraph{Application: Moment of Inertia}
+The moment of inertia is calculated using cross products in rotational dynamics:
+\[
+\mathbf{\tau} = \mathbf{r} \times \mathbf{F},
+\]
+where $\mathbf{r}$ is the position vector and $\mathbf{F}$ is the force vector.
+
+\paragraph{Example:}
+Let $\mathbf{r} = \langle 3, 0, 0 \rangle$ m and $\mathbf{F} = \langle 0, 5, 0 \rangle$ N. Then:
+\[
+\mathbf{\tau} = \mathbf{r} \times \mathbf{F} = \begin{vmatrix}
+\mathbf{i} & \mathbf{j} & \mathbf{k} \\
+ 3 & 0 & 0 \\
+ 0 & 5 & 0
+\end{vmatrix} = \mathbf{i}(0) - \mathbf{j}(0) + \mathbf{k}(15) = 15\mathbf{k}.
+\]
+
+\section{Conclusion}
+Vectors are fundamental in mathematics and physics, allowing us to represent and compute physical phenomena efficiently. Understanding vector operations is key to solving problems in mechanics, electromagnetism, and other fields.
+
+\end{document}
